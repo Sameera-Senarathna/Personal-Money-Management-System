@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.individualProject.controller.BarChartReportViewController">
+   <children>
+      <Group>
+         <children>
+            <Label prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #536dfe; -fx-alignment: center;" text="Reports In Bar Charts" textFill="WHITE">
+               <font>
+                  <Font name="FreeSerif Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="159.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/img/bar-chart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="4.0" layoutY="4.0" onMouseClicked="#clickHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/img/icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <BarChart fx:id="barChart" animated="false" layoutX="28.0" layoutY="174.0" prefHeight="267.0" prefWidth="639.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadada" height="29.0" layoutX="219.0" layoutY="71.0" opacity="0.25" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <JFXRadioButton fx:id="radioExpense" focusTraversable="false" layoutX="239.0" layoutY="76.0" text="Expense" />
+      <JFXRadioButton fx:id="radioIncome" focusTraversable="false" layoutX="368.0" layoutY="76.0" text="Income" />
+      <DatePicker fx:id="datePicker" layoutX="27.0" layoutY="58.0" prefHeight="28.0" prefWidth="132.0" />
+      <ImageView fx:id="imgPrevious" fitHeight="30.0" fitWidth="30.0" layoutX="35.0" layoutY="120.0" onMouseClicked="#clickPreviousImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/img/left-arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgNext" fitHeight="30.0" fitWidth="30.0" layoutX="656.0" layoutY="120.0" onMouseClicked="#clickNextImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/img/right-arrow.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="77.0" layoutY="126.0" prefHeight="18.0" prefWidth="103.0" text="Previous Month">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="126.0" prefHeight="18.0" prefWidth="79.0" text="Next Month">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTableHeader" layoutX="222.0" layoutY="117.0" prefHeight="30.0" prefWidth="286.0" style="-fx-alignment: Center;" text="2018 - JULY Report">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="29.0" layoutY="456.0" prefHeight="29.0" prefWidth="326.0" text="Total Value : Rs. 0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
