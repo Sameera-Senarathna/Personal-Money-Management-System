@@ -11,4 +11,24 @@ Main objective of this software solution is to provide detail overview of an ind
 
 ![deepinscreenshot_select-area_20190118073056](https://user-images.githubusercontent.com/46773071/51360869-71cac500-1af3-11e9-9e02-b4216653a682.png)
 
+### Main Features
 
+* User Can Create, Modify and Delete Categories and Sub Categoriess
+
+    >  Example :- Lunch , Breakfase and Dinner are Sub Category of Food Category.
+
+* User Can Create , Modify and Delete Accounts which he uses for Transaction
+
+    > Example :- Money in Hand Account , HSBC Saving Account , HSBC Credit Card
+
+* User Can Review , Add , Modify and Delete Daily monetory transaction 
+
+    > Example Transaction :- Rs. 250 for Lunch on 2019 March 25
+    
+* User Can view reports on how monthly expences 
+
+    > Example :- Bar Charts , Tables 
+    
+### ER Diagram of the System
+
+![deepinscreenshot_select-area_20190123041711](https://user-images.githubusercontent.com/46773071/51571000-cb9e0700-1ec6-11e9-93a3-24afc2f6f82c.png)
