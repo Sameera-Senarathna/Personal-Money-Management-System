@@ -32,3 +32,8 @@ Main objective of this software solution is to provide detail overview of an ind
 ### ER Diagram of the System
 
 ![deepinscreenshot_select-area_20190123041711](https://user-images.githubusercontent.com/46773071/51571000-cb9e0700-1ec6-11e9-93a3-24afc2f6f82c.png)
+
+### Folder Structure
+
+![deepinscreenshot_select-area_20190123052018](https://user-images.githubusercontent.com/46773071/51573359-e7a5a680-1ece-11e9-9624-52938e54277d.png)
+
